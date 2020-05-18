@@ -1,0 +1,247 @@
+\documentclass[12pt,a4paper,titlepage,openany]{book}
+\usepackage[OT4]{polski}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc} 
+%\usepackage{amsmath}
+%\usepackage{amsfonts}
+%\usepackage{amssymb}
+\usepackage{tabto}
+\usepackage{fancyhdr}
+\usepackage{geometry}
+\usepackage{graphicx}
+\usepackage{hyperref} 
+\usepackage{makeidx}
+\usepackage{titlesec}
+\usepackage{xcolor}
+
+\newgeometry{tmargin=1.5cm, bmargin=2cm, lmargin=2cm, rmargin=2cm}
+\linespread{1.2}
+
+%% Formatowanie nagłówków %%
+\titleformat{\part}{\begin{center}\textbf{{\Huge Część \thepart}}\end{center}}{}{0pt}{\bfseries\Huge\center}[]
+\titleformat{\section}{}{}{0pt}{\bfseries\Large\center}[]
+\titleformat{\subsection}{}{}{0pt}{\bfseries\Large\center}[]
+
+\newcommand{\tyt}[1]{\phantomsection \section{#1} }
+\newcommand{\song}[1]{\phantomsubsection \subsection{#1} }
+\newcommand{\auth}[1]{\begin{center}\textit{#1}\end{center}}
+\newcommand{\divider}[1]{\phantomsection\addcontentsline{toc}{chapter}{#1}}
+\newcommand{\capo}[1]{\begin{flushright}capo #1\end{flushright}}
+\newcommand{\hop}{\vskip 2mm}
+\newcommand{\hops}{\vskip 3mm}
+\newcommand{\nxt}{\vskip 1cm}
+\newcommand{\sng}[1]{\textcolor{gray}{ [#1] \hspace{4mm}}}
+
+\setcounter{secnumdepth}{0}
+
+\begin{document}
+%----------------------------------------------------------------------------------------
+%	TITLE PAGE
+%----------------------------------------------------------------------------------------
+
+\begin{titlepage} % Suppresses displaying the page number on the title page and the subsequent page counts as page 1
+	\raggedleft % Right align the title page
+	
+	\rule{1pt}{\textheight} % Vertical line
+	\hspace{0.05\textwidth} % Whitespace between the vertical line and title page text
+	\parbox[b]{0.75\textwidth}{ % Paragraph box for holding the title page text, adjust the width to move the title page left or right on the page
+		
+		{\textsc{Marta Mościcka} przedstawia}
+		\\[2\baselineskip] 		
+		{\Huge\bfseries Śpiewnik \\[0.5\baselineskip] Gitarą i Piórem}
+		\\[16\baselineskip] 		
+		{\large\textit{Zagramy na góry koncert!}}	
+		
+		\begin{flushright}
+		Wersja~~\fbox{$3.4$}
+		\end{flushright}
+		
+	}
+\end{titlepage}
+\raggedbottom
+\pagestyle{plain}
+
+\tableofcontents
+
+\NumTabs{6}
+\phantomsection
+\part{Piosenki Polskie}
+\divider{Stare Dobre Małżeństwo}
+\input{polish/SDM/BalladaoPoecie.tex}
+\input{polish/SDM/BieszczadzkieAnioly.tex}
+\input{polish/SDM/CzwartaNadRanem.tex}
+\input{polish/SDM/Jak.tex}
+\input{polish/SDM/KimWlasciwieByla.tex}
+\input{polish/SDM/MakatkaSzalona.tex}
+\input{polish/SDM/MakatkaZAniolem.tex}
+\input{polish/SDM/MiedzyNamiTyleSniegu.tex}
+\input{polish/SDM/NieBrooklinskiMost.tex}
+\input{polish/SDM/Niepokoj.tex}
+\input{polish/SDM/OpadlyMgly.tex}
+\input{polish/SDM/PiesnNaWyjscie.tex}
+\input{polish/SDM/PiosenkaDlaWojtkaBellona.tex}
+\input{polish/SDM/Sanctus.tex}
+\input{polish/SDM/WojtkaBellonaOstatnia.tex}
+\input{polish/SDM/ZNimBedzieszSzczesliwsza.tex}
+\divider{Wolna Grupa Bukowina}
+\input{polish/WGB/BarnaStawach.tex}
+\input{polish/WGB/BezSlow.tex}
+\input{polish/WGB/BukowinaI.tex}
+\input{polish/WGB/BukowinaII.tex}
+\input{polish/WGB/Dzwiek.tex}
+\input{polish/WGB/PiosenkaOZajaczku.tex}%letnia piosenka o zajączku
+\input{polish/WGB/MajsterBieda.tex}
+\input{polish/WGB/NocnaPiosenkaOMiescie.tex}
+\input{polish/WGB/NutaZPonidzia.tex}
+\input{polish/WGB/PejzazeHarasymowiczowskie.tex}
+\input{polish/WGB/PiesnLagodnych.tex}
+\input{polish/WGB/Rzeka.tex}
+\input{polish/WGB/SielankaODomu.tex}
+\input{polish/WGB/Sprzysiezeni.tex}
+\divider{Browar Żywiec}
+\input{polish/BZ/BalladaListopadowa.tex}
+\input{polish/BZ/BalladaoRozy.tex}
+\input{polish/BZ/Jaworzyna.tex}
+\input{polish/BZ/NiebieskiRejs.tex}
+\input{polish/BZ/PannaKminkowa.tex}
+\input{polish/BZ/Powrot.tex}
+\input{polish/BZ/Wieczor.tex}
+\input{polish/BZ/WielkiWoz.tex}
+\input{polish/BZ/WLesniczowce.tex}
+
+\divider{Perełki - Yapa, Bazuna i inne}
+\input{polish/Perelki/BalladaoMikolaju.tex}
+\input{polish/Perelki/Beskid.tex}
+\input{polish/Perelki/ChlebaNaszegoPoprzedniego.tex}
+\input{polish/Perelki/ChybaJuzCzas.tex}
+\input{polish/Perelki/DinDinDon.tex}
+\input{polish/Perelki/EjPoSzerokiej.tex}
+\input{polish/Perelki/Glogostan.tex}
+\input{polish/Perelki/JeszczeNieCzas.tex}
+\input{polish/Perelki/Jezioro.tex}
+\input{polish/Perelki/KolysankaDlaMisiakow.tex}
+\input{polish/Perelki/Lawina.tex}
+\input{polish/Perelki/Mewy.tex}
+\input{polish/Perelki/Miasto.tex}
+\input{polish/Perelki/MojeBajki.tex}
+\input{polish/Perelki/Mokro.tex}
+\input{polish/Perelki/NaszaKlasa.tex}
+\input{polish/Perelki/NieSprzedawajcie.tex}
+\input{polish/Perelki/PiosenkaNaNowyRok.tex}
+\input{polish/Perelki/Polanka.tex}
+\input{polish/Perelki/PoloninyNiebieskie.tex}
+\input{polish/Perelki/Preludium.tex}
+\input{polish/Perelki/PrzerwaWPodrozy.tex}
+\input{polish/Perelki/RomansWDeszczu.tex}
+\input{polish/Perelki/RzekaMarzen.tex}
+\input{polish/Perelki/Tesknica.tex}
+\input{polish/Perelki/WGorachJestWszystko.tex}
+\input{polish/Perelki/ZostajeTania.tex}
+
+\divider{Tłumaczenia}
+\input{translations/Sciana.tex} %Po co budujemy mur
+\input{translations/UliceMiasta.tex}
+\input{translations/Kolo.tex}
+\input{translations/KnockKnock.tex}
+\input{translations/Lawa.tex}
+\input{translations/Naukowiec.tex}
+\input{translations/Wygnanie.tex}
+\divider{Andrzej Brzeski}
+\input{polish/Brzeski/Odchodzimy.tex}
+\input{polish/Brzeski/UlicaBialoskornicza.tex}
+\input{polish/Brzeski/ZaPierwszaChmura.tex}
+\divider{Andrzej Garczarek}
+\input{polish/Garczarek/JakMyWWyszemborku.tex}
+\input{polish/Garczarek/Sobota.tex}
+\input{polish/Garczarek/TakJakPlecyTaksowkarza.tex}
+\divider{Satyry i piosenki aktorskie}
+\input{polish/Satyry/BalladaoMisiu.tex}
+\input{polish/Satyry/Jagody.tex}
+\input{polish/Satyry/Mufka.tex}
+\input{polish/Satyry/TematTabu.tex}
+\divider{Inne}
+\input{polish/33zawody.tex}
+\input{polish/Barman.tex}
+\input{polish/BarpodZdechlymPsem.tex}
+\input{polish/ByleNieoMilosci.tex}
+\input{polish/CiezkieCzasy.tex}
+\input{polish/DzikiWloczega.tex}
+\input{polish/GdyWybierac.tex}
+\input{polish/MinionyCzas.tex}
+\input{polish/NaPiecMinut.tex}
+\input{polish/NaszModigliani.tex}
+\input{polish/Nowa.tex}
+\input{polish/PiesnPriscilli.tex}
+\input{polish/PiosenkaoKoncuSwiata.tex}
+\input{polish/WroniejeSwiat.tex}
+\input{polish/Zima.tex}
+\input{polish/ZostanieTyleGor.tex}
+\input{polish/Zwiewnosc.tex}
+\input{polish/ZylemTylkoSnem.tex}
+\phantomsection
+
+\part{Inne języki}
+\divider{Angielski}
+\input{english/MistyMountains.tex}
+\input{english/SongOfDurin.tex}
+\input{english/LonelyMountain.tex}
+
+\input{english/Hallelujah.tex}
+\input{english/Lava.tex}
+\input{english/NeverEnough.tex}
+\input{english/Scientist.tex}
+
+\input{english/ScarboroughFair.tex}
+\input{english/SoundOfSilence.tex}
+
+\input{english/Sovngarde.tex}
+
+\input{english/Transistor.tex}
+\divider{Suahili}
+\input{languages/BabaYetu.tex}
+\divider{Fiński}
+\input{languages/IevanPolkka.tex}
+\divider{Szwedzki}
+\input{languages/HerrMannelig.tex}
+\divider{Nordyckie}
+\input{languages/Tyr.tex}
+\divider{Hamradun (2015)}
+\input{languages/Hamradun.tex}
+\divider{Hetjuslod (2019)}
+\input{languages/Hetjuslod.tex}
+
+%\divider{Andre}
+
+%\input{piosenki/Ide.tex}
+%\input{piosenki/ModlitwaWedrownegoGrajka.tex}
+%\input{piosenki/Odludzie.tex}
+%\input{piosenki/Skowyt.tex}
+%\input{piosenki/WiejeWiatr.tex}
+
+%\phantomsection
+%\part{Ayreon}
+
+%\divider{The Final Experiment (1995)}
+%\input{ayreon/FinalExperiment.tex}
+
+%\divider{Actual Fantasy (1996)}
+%\input{ayreon/ActualFantasy.tex}
+%\divider{Into The Electric Castle (1998)}
+%\input{ayreon/ElectricCastle.tex}
+%\divider{Universal Migrator (2000)}
+%\input{ayreon/UniversalMigrator.tex}
+%\divider{Human Equation (2004)}
+%\input{ayreon/HumanEquation.tex}
+%\divider{01011001 (2008)}
+%\input{ayreon/01011001.tex}
+
+%\divider{Theory of Everything (2013)}
+%\input{ayreon/TheoryOfEverything1.tex}
+%\input{ayreon/TheoryOfEverything2.tex}
+%\input{ayreon/TheoryOfEverything3.tex}
+%\input{ayreon/TheoryOfEverything4.tex}
+%\divider{The Source (2017)}
+%\input{ayreon/source.tex}
+
+
+\end{document}
