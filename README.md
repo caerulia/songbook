@@ -5,6 +5,11 @@ Sukcesywnie uzupełniana kolekcja piosenek, które lubię grać/śpiewać.
 
 **Protip:** firefox otwiera pdfy tak, że linki ładnie działają :)
 
+Utworzyłam dwie playlisty na youtubie, każda do odpowiedniej części śpiewnika. Znajdują się pod poniższymi linkami:\\
+https://www.youtube.com/playlist?list=PLf_yxjaUDlJBz2oqLtHQ2bDSNNhGAMNi7 \\
+https://www.youtube.com/playlist?list=PLf_yxjaUDlJAEL0DH5Hk7u5rO_QU99Dfw
+
+
 ## Pliki
 Głównym plikiem jest `wersja3.tex`, razem z pdfem przez niego wygenerowanym.
 
